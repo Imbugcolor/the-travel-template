@@ -18,6 +18,8 @@ html{
 .align-item-center{
     align-items: center;
 }
+
+/*header css */
 #header {
     position: fixed;
     z-index: 1;
@@ -28,6 +30,8 @@ html{
     transition: background .5s ease;
     scroll-behavior: smooth;
 }
+/*header css */
+
 /* logo css */
 #logo {
     position: absolute;
@@ -38,6 +42,8 @@ html{
     font-weight: bolder;
     line-height: 80px;
 }
+/*end  logo css */
+
 /* navbar css */
 #navbar {
     height: 60px; 
@@ -86,6 +92,9 @@ html{
 .border-bttom-active{
     border-bottom: 2px solid #01ce69; 
 }
+/*end navbar css */
+
+/*slider css */
 #slider {
     top:0;
     width: 100%;
@@ -102,7 +111,9 @@ html{
     top: 0;
     background-image: linear-gradient(to top, transparent, #18151f);
 }
-/*intro */
+/*end slider css */
+
+/*intro slider css*/
 #intro {
     height: auto;
     position: absolute;
@@ -144,6 +155,8 @@ html{
     background: transparent; 
     transition: .3s;
 }
+/*end intro slider css*/
+
 /* social-link css */
 #social-link {
     position: fixed;
@@ -174,9 +187,13 @@ html{
     color: #fff;
     background-color: #fff;
 }
+/* end social-link css */
+
 #content {
     padding: 35px;
 }
+
+/* About section css */
 #about-section .about h2{
     font-family: 'Nothing You Could Do', cursive;
     font-size: 50px;
@@ -202,6 +219,9 @@ html{
 .about-content img{
     width: 100%;
 }
+/* About section css */
+
+/* Area searh css */
 #where-togo-area {
     margin: 50px -35px;
     background: #040E27;
@@ -244,7 +264,9 @@ html{
 #where-togo-area .form-container button:hover{
     background-color: #1EC6B6;
 }
-/* country dropdown */
+/* end Area searh css */
+
+/*area search dropdown css */
 .places-select{
     position: relative;
 }
@@ -293,6 +315,7 @@ html{
     padding: 5px 15px;
     cursor: pointer;
 }
+/* end area search dropdown css */
 #destination-section .popular-destination h2{
     font-family: 'Nothing You Could Do', cursive;
     font-size: 50px;
@@ -362,6 +385,8 @@ html{
     margin-left: 15px; 
     transition: 0.3s;
 }
+
+/* menu-toggle mobile css */
 #header .menu-toggle{
     color: #01ce69;
     float: right;
@@ -371,9 +396,12 @@ html{
     cursor: pointer;
     display: none;
 }
+/*end menu-toggle mobile css */
+
+/* mailbox css */
 #mailbox {
     position: relative;
-    margin:0 -35px;
+    margin:80px -35px;
     background-image: url('../image/mailbox-layout.webp');
     background-repeat: no-repeat;
     background-position: center center;
@@ -420,6 +448,7 @@ html{
 #mailbox .container button:hover{
     background-color: #1EC6B6;
 }
+
 #mailbox .container h3
 {
     color: #fff;
@@ -430,6 +459,119 @@ html{
     font-size: 18px;
     color: #fff;
 }
+/* end mailbox css*/
+
+/*places popular section css */
+#places-popular-section{
+    padding-bottom: 150px;
+}
+#places-popular-section .places-popular-header{
+    margin-bottom: 40px;
+}
+#places-popular-section .places-popular-header h2{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+#places-popular-section .places-popular-header p{
+    text-align: center;
+    font-size: 20px;
+    opacity: 0.6;
+    width: 75%;
+    padding-left: 25%;
+}
+#places-popular-section a{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.single-places-item {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 5%);
+}
+.single-places-item:hover .name-info-item{
+    color: #FF4A52;
+}
+.single-places-item:hover .places-img-item .price{
+    background-color: #FF4A52;
+}
+.single-places-item:hover{
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+}
+.places-popular-list .places-img-item img{
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+.places-popular-list .places-img-item {
+    position: relative;
+}
+.places-img-item .price {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #1EC6B6;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.places-img-item .price a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+.places-info-item {
+    padding: 20px;
+}
+.places-info-item a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.places-info-item p{
+    opacity: 0.6;
+    font-weight: 600;
+}
+.places-info-item .rating-days{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.places-info-item .rating-days .day{
+    opacity: 0.6;
+}
+.places-info-item .rating-days .star-rate{
+    color: #FDAE5C;
+}
+.places-info-item .rating-days a{
+    font-size: 16px;
+    opacity: 0.6;
+    font-weight: 600;
+}
+#places-popular-section .more-places{
+    text-align: center;
+    margin-top: 40px;
+}
+#places-popular-section .more-btn{
+    padding: 18px 50px;
+    border: none;
+    background-color: #FF4A52;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.5s;
+}
+#places-popular-section .more-btn:hover{
+    background-color: #1EC6B6;
+}
+/*end places popular section css */
+
 @media only screen and (max-width: 1280px){
     #where-togo-area .form-container .fbox{
         margin: 15px -15px 15px 15px;
