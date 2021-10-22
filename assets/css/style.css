@@ -35,7 +35,6 @@ html{
 /* logo css */
 #logo {
     position: absolute;
-    top: 5px;
     left: 5%;
     font-size: 34px;
     color: #01ce69;
@@ -190,7 +189,7 @@ html{
 /* end social-link css */
 
 #content {
-    padding: 35px;
+    padding: 60px;
 }
 
 /* About section css */
@@ -223,13 +222,13 @@ html{
 
 /* Area searh css */
 #where-togo-area {
-    margin: 50px -35px;
+    margin: 50px -60px;
     background: #040E27;
     padding: 86px 0;
     color:#fff;
 }
 #where-togo-area .container{
-    padding: 0 35px;
+    padding: 0 60px;
 }
 #where-togo-area .form-container .fbox{
    justify-content: space-between;
@@ -401,7 +400,7 @@ html{
 /* mailbox css */
 #mailbox {
     position: relative;
-    margin:80px -35px;
+    margin:80px -60px;
     background-image: url('../image/mailbox-layout.webp');
     background-repeat: no-repeat;
     background-position: center center;
@@ -421,7 +420,7 @@ html{
     z-index: -1;
 }
 #mailbox .container{
-    padding: 60px 35px;
+    padding: 60px;
 }
 #mailbox .container input{
     width: 100%;
@@ -572,6 +571,99 @@ html{
 }
 /*end places popular section css */
 
+/*video area css */
+#video-area {
+    background-image: url('../image/videoarea.png');
+    padding: 190px 0;
+    margin: 0 -60px;
+    text-align: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 0;
+}
+#video-area::before{
+    opacity: 0.2;
+    background-color: #000;
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+}
+#video-area .container h2{
+    margin-bottom: 75px;
+    color: #fff;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 80px;
+    font-weight: 400;
+}
+.video-play .video_play_button{
+    border-radius: 50%;
+    background-color: #1EC6B6;
+    padding: 27.5px 35px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+}
+.video-play .playIcon{
+    position: relative;
+}
+.video-play .video_play_button::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1EC6B6;
+    border-radius: 50%;
+    animation: border-pulsate 1500ms ease-out infinite;
+    left: 0;
+    bottom: 0;
+}
+/*end video area css */
+
+/*travel_variation_area css */
+#travel_variation_area .variation-item{
+    text-align: center;
+}
+.variation-item .variation-img{
+    width: 100%;
+    padding: 26px;
+}
+.variation-item h3{
+    font-weight: 600;
+    font-size: 22px;
+}
+.variation-item p{
+    opacity: 0.6;
+    font-weight: 600;
+}
+/*end travel_variation_area css */
+
+/* keyframe css */
+@keyframes border-pulsate {
+    0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(30, 196, 182, 0.8);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 40px rgba(30, 196, 182, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(30, 196, 182, 0);
+	}
+}
+/*end keyframe css */
+
 @media only screen and (max-width: 1280px){
     #where-togo-area .form-container .fbox{
         margin: 15px -15px 15px 15px;
@@ -698,5 +790,13 @@ html{
     }
     #mailbox .container button{
         margin-top: 15px;
+    }
+    #places-popular-section .places-popular-header h2{
+        font-size: 40px;
+    }
+    #places-popular-section .places-popular-header p{
+        font-size: 16px;
+        width: 100%; 
+        padding-left: 0;
     }
 }
