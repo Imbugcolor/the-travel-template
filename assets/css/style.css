@@ -138,6 +138,7 @@ html {
   text-shadow: white 0px 0px 1px;
 }
 #intro button {
+  margin-top: 50px;
   height: 65px;
   width: 240px;
   border: solid #01ce69;
@@ -708,6 +709,116 @@ html {
 }
 /* end testimonial_area */
 
+/* recent-trip css */
+#recent-trip .recent-trip-header{
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 28px;
+}
+.trip-item .single-trip-item{
+  margin-bottom: 30px;
+}
+.trip-item .single-trip-item:hover a{
+  color: #ff4a52;
+}
+.trip-item .trip-img img{
+  width: 100%;
+  border-radius: 8px;
+
+}
+.trip-item .trip-date{
+  opacity: 0.6;
+}
+.trip-item .trip-name{
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+  transition: 0.3s;
+}
+/*end recent-trip css */
+/* footer css*/
+#footer {
+  background-color: #040E27;
+  color: #fff;
+  padding-top: 80px;
+}
+#footer .container{
+  padding:0 60px;
+}
+#footer .footer_logo{
+  font-size: 26px;
+  color: #01ce69;
+  font-weight: bolder;
+}
+#footer .address {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #AAB1B7;
+  margin: 40px 0;
+}
+#footer .address a{
+  text-decoration: none;
+  color: #AAB1B7;
+  transition: 0.3s;
+}
+#footer .social-widget a{
+  margin-right: 15px;
+  color: #AAB1B7;
+  transition: 0.3s;
+  text-decoration: none;
+}
+#footer .footer_company, #footer .footer_instargram{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+#footer ul{
+  list-style-type: none;
+}
+#footer ul li{
+  line-height: 44px;
+  color:#AAB1B7;
+}
+#footer ul li a{
+  text-decoration: none;
+  color:#AAB1B7;
+  transition: 0.3s;
+}
+#footer a:hover{
+  color: #ff4a52;
+}
+.ins-img img{
+  width: 100%;
+  border-radius: 8px;
+}
+#footer .footer_widget_single{
+  margin-bottom: 40px;
+}
+#footer .footer-copyright{
+  margin-top: 50px;
+}
+#footer .footer-copyright .border-top-copyright{
+  border-top:1px solid #363E52;
+  padding-bottom: 26px;
+}
+#footer .footer-copyright .copyright-text {
+  color:#AAB1B7;
+  font-size: 16px;
+  margin-bottom: 26px;
+}
+.footer-copyright .copyright-text p{
+  text-align: center;
+}
+.footer-copyright .copyright-text i{
+  font-size: 14px;
+}
+.footer-copyright .copyright-text a{
+  text-decoration: none;
+  color: #ff4a52;
+}
+/*end footer css*/
+
 @media only screen and (max-width: 1280px) {
   #where-togo-area .form-container .fbox {
     margin: 15px -15px 15px 15px;
@@ -863,6 +974,9 @@ html {
   }
   #testimonial_area{
       margin: 80px -15px;
+  }
+  #footer .container{
+    padding: 0 15px;
   }
     /* end extend content margin padding*/
 }
