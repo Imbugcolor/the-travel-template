@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
@@ -466,10 +468,49 @@
             </div>
         </div>
         <!--end travel_variation_area-->
+
+        <!--testimonial_area-->
+        <div id="testimonial_area">
+            <div class="container">
+                <div class="ro">
+                    <div class="owl-carousel owl-theme">
+                        <div class="col-12 col-md-12 col-sm-12 testmonial_active">
+                            <div class="author-img">
+                                <img src="./assets/image/Author.webp" alt="">
+                            </div>
+                            <div class="author-status">
+                                <p class="sayings">"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
+                                <p class="name-author">- Tom Mouse</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-sm-12 testmonial_active">
+                            <div class="author-img">
+                                <img src="./assets/image/Author.webp" alt="">
+                            </div>
+                            <div class="author-status">
+                                <p class="sayings">"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
+                                <p class="name-author">- Jerry Mouse</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-sm-12 testmonial_active">
+                            <div class="author-img">
+                                <img src="./assets/image/Author.webp" alt="">
+                            </div>
+                            <div class="author-status">
+                                <p class="sayings">"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
+                                <p class="name-author">- Marcus Mouse</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end testimonial_area-->
     </div>
 </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function(){
             activeLinkControl()
@@ -494,7 +535,20 @@
                 // add active class to clicked item but at li not the anchor
                 $(this).closest('.navItem').addClass('border-bttom-active')
         })
-        }
+    }
+        /* slide carousel jquery custom */
+        $('.owl-carousel').owlCarousel({
+            items:1,
+            lazyLoad: true,
+            loop: true,
+            margin: 10,          
+            autoplay: true,
+            autoPlaySpeed: 5000,
+            autoPlayTimeout: 5000,
+            autoplayHoverPause: true,
+            autoplaySpeed:1000
+        });
+        /*end slide carousel jquery custom*/
         window.addEventListener('scroll', function (){
           let header = document.getElementById('header');
           let windowPosition = window.scrollY > 0;
